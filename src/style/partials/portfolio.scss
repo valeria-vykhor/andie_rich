@@ -1,0 +1,242 @@
+.portfolio {
+    margin-bottom: 44px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 122px;
+     }
+
+    @media screen and (min-width: 1005px) {
+       padding: 0; 
+    }
+
+    .display-4 {
+        line-height: 3rem;
+
+        @media screen and (max-width: 575px) {
+            padding-left: 15px;
+            line-height: 3.9rem;
+        }
+    }
+
+    .section-title {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+
+        @media screen and (max-width: 575px) {
+            padding-left: 15px;
+            font-size: .56rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 52px;
+        }
+
+        &:after {
+            background-color: #7b7b7b;
+            top: 8px;
+            
+            @media screen and (min-width: 768px) {
+                width: 142px;
+                left: 78px;
+            }
+
+            @media screen and (max-width: 575px) {
+                left: 69px;
+                top: 6px;
+            }
+        }
+    }
+
+    .portfolio__item-container {
+        @media screen and (min-width: 768px) {
+            padding-top: 30px;
+        }
+        
+        img {
+            width: 100%;
+            max-width: 100%;
+
+            @media screen and (min-width: 401px) {
+                object-fit: cover;
+                overflow: hidden;
+            }
+           
+            @media screen and (max-width: 767px) {
+                height: auto;
+            }
+
+            @media screen and (max-width: 400px) {
+                max-height: 214px;
+            }
+        }
+
+        .portfolio__item {
+
+            @media screen and (max-width: 575px) {
+                margin: 0 -15px 0 -15px;
+            }
+
+            .position-absolute {
+                color: #fff;
+                @extend .text-uppercase;
+                font-weight: 900;
+                bottom: 24px;
+                left: 21px;
+                font-size: 1.07rem;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 2.42rem;
+                    bottom: 64px;
+                    left: 25px;
+                }
+            }
+        }
+
+        .col-md-5 {
+            
+            .position-absolute {
+
+                @media screen and (min-width: 768px) {
+                    font-size: 1.77rem;
+                    bottom: 28px;
+                    left: 57px;
+                }
+            }
+                
+            .portfolio__item {
+                &:first-child {
+                    
+                    @media screen and (min-width: 768px) {
+                        padding: 0 0 2px 3px;   
+                    }
+
+                    .position-absolute {
+                        @media screen and (min-width: 768px) {
+                            left: 47px;
+                            bottom: 31px; 
+                        } 
+                    }
+                }
+
+                &:nth-child(2) {
+                    @media screen and (min-width: 768px) {
+                        border-top: 3px solid #fff;
+                        border-left: 3px solid #fff;
+                        width: 126.5%;
+                        margin-left: -26.5%;  
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-black, .btn-grey {
+        width: 195px;
+        height: 37px;
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+
+        @media screen and (max-width: 767px) {
+            margin: 6px 0 30px 0px;
+            height: 27px;
+            font-size: 0.95rem;
+        }
+    }
+
+    .btn-grey {
+        @media screen and (min-width: 768px) {
+            margin: 0 26px 0 10px;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 27px;
+            font-size: 0.95rem;
+            margin: 6px 0 30px 5px;
+        }
+    }
+
+    .portfolio__btn-container {
+        @extend .m-l-150;
+        padding-top: 34px;
+
+        @media screen and (max-width: 767px) {
+            padding: 12px 15px 0;
+        }
+
+        .col-12 {
+
+            button {
+                @media screen and (max-width: 767px) {
+                    border-bottom: 1px solid #232323;
+                    width: 100%;
+                    max-width: 227px;
+                }
+            }
+            
+            @media screen and (min-width: 768px) {
+               border-left: 1px solid rgba(35, 35, 35, 255);
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                max-width: 30%; 
+             }
+
+            text-align: center;
+            
+            button {
+                @extend .text-uppercase;
+                font-size: 0.75rem;
+                padding: 7px 0 10px;
+
+                @media screen and (max-width: 767px)  {
+                    padding: 16px 0 19px;
+                }
+            }
+
+            &:first-child {
+
+                button {
+                    @media screen and (max-width: 767px) {
+                        font-weight: 500;
+                    }
+                }
+
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    max-width: 40%; 
+                 }
+
+                 @media screen and (min-width: 768px) {
+                    padding: 0 45px 0 193px;
+                 }
+    
+                button {
+                    position: relative;
+
+                    &:before {
+
+                        @media screen and (min-width: 768px) {
+                            width: 120px;
+                            left: -140px;
+                            position: absolute;
+                            content: '';
+                            height: 1px;                            
+                            top: 16px;
+                            background-color: rgba(35, 35, 35, 255);
+                        }
+                    }
+
+                    &:after {
+                        @media screen and (min-width: 768px) {
+                            position: absolute;
+                            content: '';
+                            left: -21px;
+                            top: 13px;
+                            border: 4px solid transparent;	
+                            border-left: 7px solid rgba(35, 35, 35, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

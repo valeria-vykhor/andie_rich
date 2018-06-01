@@ -1,0 +1,122 @@
+.modal-content, .modal-body, .modal-header,.modal-footer {
+    border: none;
+}
+
+.modal-content {
+    min-height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+
+    .display-4 {
+        font-size: 3.7rem;
+        letter-spacing: 3px;
+        margin-top: 31px;
+        margin-bottom: 50px;
+    }
+}
+
+.modal-header {
+    display: block;
+    max-width: 1000px;
+    
+    @media screen and (max-width: 768px) {
+        max-width: 612px;
+    }
+}
+
+.modal-body {
+    max-width: 612px;
+    margin-bottom: 110px;
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.close {
+    margin: 0 !important;
+}
+
+.footer__form_lg {
+    input, textarea {
+        &::placeholder {
+            @extend .text-uppercase;
+            font-size: 0.85rem;
+            color: #232323;
+            font-weight: 300;
+        }
+    }
+
+    input {
+        height: 70px;
+    }
+
+    textarea {
+        height: 142px;
+        margin-top: 23px;
+    }
+
+    button {
+        @extend .text-uppercase;
+        font-weight: 500;
+        margin-top: 23px;
+        letter-spacing: 1px;
+    }
+}
+
+.footer__social-menu {
+    margin-bottom: 0;
+
+    img {
+        max-width: 32.5px;
+        vertical-align: baseline;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    li:nth-child(2) {
+        border-right: 1px solid #232323;
+        border-left: 1px solid #232323;
+        padding: 0 18px;
+        margin: 0 20px 0 15px;
+        height: 22px;
+    }
+}
+
+.close-caption {
+    position: relative;
+
+    @media screen and (max-width: 770px) {
+        padding: 0 !important;
+    }
+
+    &:after {
+        position: absolute;
+        content: "close";
+        @extend .text-uppercase;
+        color: rgba(220, 220, 220, 255);
+        right: -40px;
+        top: 14px;
+        font-size: 0.83rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+
+.modal-footer {
+    background-color: #f0f0f0;
+    padding-top: 50px;
+    padding-bottom: 36px;
+
+    .container {
+        max-width: 612px;
+    }
+}

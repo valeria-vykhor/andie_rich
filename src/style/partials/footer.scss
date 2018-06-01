@@ -1,0 +1,257 @@
+footer {
+    background: url(../img/bottom-bg.png) 100% 73px no-repeat;
+    background-size: contain;
+    padding-bottom: 70px;
+    margin-top: 39px;
+
+    @media screen and (min-width: 768px) {
+        background: url(../img/bg-3.png) top left no-repeat;
+        background-size: contain;
+        margin-top: 93px;
+        padding-top: 125px;
+    }
+
+    .container {
+        @media screen and (max-width: 575px) {
+            padding: 0 30px;
+        }
+    } 
+
+    > .container > .row, .container > p {
+        @media screen and (min-width: 768px) {
+            max-width: 760px;
+        }
+    }
+
+    a {
+        color: #232323;
+        &:hover, &focus {
+            color: #232323;
+        }
+    }
+
+    .btn-black {
+        width: 256px;
+        height: 45px;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        background-color: #fff;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 5px;
+        }
+
+        &:after {
+            background-color: #f8f8f8;
+            height: 6px;
+        }
+    }
+
+    .btn-grey {
+        width: 213px;
+        height: 35px;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        background-color: #fff;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 5px;
+            margin-left: 19px;
+        }
+    }
+
+    .footer__logo-container {
+        border-top: 1px solid #232323;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 51px;
+        } 
+        
+        img {
+            padding-top: 7px;
+            
+            @media screen and (min-width: 768px) {
+                padding-right: 15px;
+                padding-top: 12px;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 51px;
+            background-color: #232323;
+            top: 0;
+            left: 66px;
+
+            @media screen and (max-width: 767px) {
+                left: 36px;
+                height: 53px;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #232323;
+            top: 60px;
+            left: 63px;
+            @media screen and (max-width: 767px) {
+                left: 34px;
+                width: 5px;
+                height: 5px;
+                top: 59px;
+            }
+        }
+    }
+
+    .section-title {
+        font-size: .75rem;
+
+        @media screen and (max-width: 575px) {
+            font-size: 0.55rem;
+        }
+
+        &:after {
+            width: 131px;
+            left: 164px;
+            top: 8px;
+
+            @media screen and (max-width: 575px) {
+                width: 76px;
+                height: 1px;
+                left: 120px;
+                top: 6px;
+            }
+        }
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+        margin-top: 46px;
+        margin-bottom: 38px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 1.5rem;
+            margin-top: 27px;
+            margin-bottom: 22px;
+        }
+    }
+
+    .footer__contacts {
+        font-weight: 500;
+        @extend .text-uppercase;
+        font-size: 0.87rem;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 62px;
+        }
+
+        p:nth-child(2) {
+            font-size: 1.35rem;
+            line-height: 2.45rem;
+
+            @media screen and (max-width: 767px) {
+                line-height: 1.45rem;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    ul {
+        margin-bottom: 11px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 4px;
+        }
+
+        li {
+
+            a {
+                font-size: 0.85rem;
+            }
+    
+            @media screen and (max-width: 767px) {
+                margin-right: 15px;
+            }
+
+            @media screen and (min-width: 768px) {
+                margin-left: 60px;
+            }
+        }
+    }
+
+    .footer__address {
+        font-size: 0.85rem;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 6px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 28px;
+        }
+    }
+
+    .footer__logo-sm img {
+        @media screen and (max-width: 767px) {
+            width: 50px;
+            padding-top: 3px;
+            margin-right: 8px;
+        }
+    }
+
+    .footer__form {
+
+        input, textarea {
+            border-bottom: 1px solid #232323;
+            width: 100%;
+
+            &::placeholder {
+                color: rgba(82, 82, 82, 255);
+            }
+        }
+    }
+
+    .footer__form_sm {
+        margin-bottom: 54px;
+        padding: 0 7px;
+
+        input {
+            height: 45px;
+            background-color: transparent;
+
+            &::placeholder {
+                font-size: 0.87rem;
+            }
+
+            &:first-child {
+                height: 37px;
+            }
+        }
+
+        textarea {
+            height: 61px;
+            margin-top: 15px;
+            font-size: 0.87rem;
+        }
+
+        button {
+            @extend .text-uppercase;
+            background-color: #f3f3f3;
+            width: 100%;
+            height: 44px;
+            margin-top: 10px;
+            color: rgba(82, 82, 82, 255);
+            font-size: 1.1rem;
+        }
+    }
+
+    @import 'footer_modal_app_form';
+    
+}

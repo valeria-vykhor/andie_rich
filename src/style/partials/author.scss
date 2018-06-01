@@ -1,0 +1,125 @@
+.author {
+    background: url(../img/bg-4.png) right bottom no-repeat;
+    background-size: contain;
+    padding-bottom: 37px;
+
+    @media screen and (max-width: 575px) {
+        background: url(../img/author-last.png) right bottom no-repeat;
+        background-size: contain;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 992px) {
+        background-size: auto 436px;
+    }
+
+    .p-x {
+        
+        @media screen and (max-width: 575px) {
+            padding: 0 15px;
+        }
+
+        @media screen and (min-width: 992px) {
+            padding: 0 110px 0 90px;
+        }
+    }
+
+    p:nth-child(n+3) {
+        font-size: 0.75rem;
+        line-height: 0.9rem;
+
+        @media screen and (max-width: 575px) {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 0.67rem;
+            line-height: 0.9rem;
+            padding-top: 1px;
+        }
+    }
+
+    p:nth-child(3) {
+        padding: 33px 0 15px;
+
+        @media screen and (max-width: 575px) {
+            padding: 23px 0 12px;
+        }
+    }
+
+    div.text-sm-right  {
+        margin-top: 60px;
+
+        @media screen and (max-width: 575px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 40px;
+        }
+
+        @media screen and (min-width: 992px) {
+            margin-top: 120px;
+        }
+
+        p {
+
+            &:first-child {
+                font-weight: 500;
+                font-size: 1.33rem;
+                line-height: 1.65rem;
+
+                @media screen and (max-width: 575px) {
+                    font-size: 0.9rem;
+                    line-height: 1.45rem;
+                }
+            }
+
+            &:nth-child(2) {
+                font-style: italic;
+                font-weight: 300;
+                font-size: 0.74rem;
+            }
+        }
+    }
+
+    .section-title {
+        @media screen and (min-width: 992px) {
+            margin-left: 61px;
+        }
+
+        &:after {
+            width: 145px;
+            left: 84px;
+
+            @media screen and (max-width: 575px) {
+                width: 76px;
+                left: 70px;
+            }
+        }
+    }
+
+    .display-4 {
+        margin-top: 62px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #5e5e5e;
+        position: relative;
+
+        @media screen and (min-width: 992px) {
+            font-size: 4.25rem;
+            line-height: 4rem;
+        }
+
+        @media screen and (max-width: 575px) {
+            margin-top: 34px; 
+            padding-bottom: 13px;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 1px;
+                bottom: -1px;
+                left: -30px;
+                background-color: #5e5e5e;
+            }
+        }
+    }
+}

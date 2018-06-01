@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900&subset=cyrillic,cyrillic-ext');
+
+$roboto: 'Roboto', sans-serif;
+$caps: 'UniSansHeavyCAPS';
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+*:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+body {
+    font-family: $roboto;
+    font-weight: 300;
+    color: #232323;
+}
+
+@font-face {
+	font-family: 'UniSansHeavyCAPS';
+	src: url(../fonts/UniSansHeavyCAPS.otf)
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.center-block {
+	margin: 0 auto;
+	display: block;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.section-title {
+	font-weight: 500;
+	@extend .text-uppercase;
+	font-size: 0.6rem;
+	position: relative;
+
+	@media screen and (min-width: 576px) {
+		font-size: 0.85rem;
+	}
+
+	&:after {
+		position: absolute;
+		content: '';
+		display: block;
+		height: 1px;
+		width: 76px;
+		background-color: #b1b1b1;
+		top: 7px;
+		left: 130px;
+
+		@media screen and (min-width: 576px) {
+			width: 138px;
+			height: 2px;
+			top: 11px;
+		}
+	}
+}
+
+.display-4 {
+	font-weight: 900;
+	font-size: 1.5rem;
+	font-family: $caps, $roboto;
+	@extend .text-uppercase;
+
+	@media screen and (min-width: 768px) {
+		font-size: 3.8rem;
+	}
+}
+
+.m-l-140 {
+	@media screen and (min-width: 992px) {
+		margin-left: 140px;
+	}
+}
+
+.m-l-150 {
+	@media screen and (min-width: 992px) {
+		margin-left: 150px;
+	}
+}
+
+.m-l-155 {
+	@media screen and (min-width: 992px) {
+		margin-left: 155px;
+	}
+}
+
+.btn-black {
+	color: #878787;
+	border: 1px solid #878787;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		background-color: #fff;
+		right: 10px;
+		top: -1px;
+		width: 15px;
+		height: 1px;
+	}
+}
+
+.btn-grey {
+	color: #a8a8a8;
+	border: 1px solid #dfdfdf;
+	position: relative;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		background-color: #fff;
+		left: 16px;
+		bottom: -1px;
+		width: 16px;
+		height: 1px;
+	}
+}
+
+.btn-grey:hover, .btn-black:hover {
+	&:after {
+		width: 0;
+		transition: all 0.3s ease-in;
+	}
+}
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.modal-dialog {
+	max-width: 100%;
+}
+
+.close {
+	opacity: 1;
+}
