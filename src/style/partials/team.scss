@@ -6,17 +6,21 @@
     padding-top: 33px;
 
     @media screen and (min-width: 417px) {
-        background: url(../img/team-bg.png) bottom no-repeat;
-        background-size: 100% auto;
+        background: url(../img/team-bg.jpg) bottom no-repeat;
+        background-size: contain;
         background-color: #161616;
-        padding-top: 104px;
+        padding-top: 159px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 146px;
+    } 
     
     .team__column-container {
         min-height: 504px;
 
         @media screen and (min-width: 768px) {
-            min-height: 765px;
+            min-height: 825px;
         }
 
         @media screen and (max-width: 575px) {
@@ -24,7 +28,7 @@
         }
         
         > .col-auto {
-            max-width: 600px;
+            max-width: 653px;
         }
     }
 
@@ -51,6 +55,20 @@
 
         .col-12 {
             text-align: center;
+            position: relative;
+
+            &:before {
+                @media screen and (min-width: 768px) {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 10000%;
+                    min-height: 100%;
+                    bottom: -10000%;
+                    left: -1px;
+                    background-color: #ebebeb;
+                } 
+            }
 
             @media screen and (min-width: 576px) {
                 border-right: 1px solid #858585;
@@ -64,23 +82,37 @@
             button {
                 border-top: none;
             }
+
+            &:after {
+                @media screen and (min-width: 768px) {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 10000%;
+                    min-height: 100%;
+                    bottom: -10000%;
+                    right: -1px;
+                    background-color: #ebebeb;
+                }
+            }
         }
     }
 
     .section-title:after {
         width: 143px;
-        left: 113px;
+        left: 99px;
+        background-color: #fff;
 
         @media screen and (max-width: 575px) {
             width: 76px;
             top: 7px;
-            left: 80px;
+            left: 72px;
         }
     }
 
     .display-4 {
-        padding-top: 32px;
-        padding-bottom: 2px;
+        padding-top: 20px;
+        padding-bottom: 9px;
 
         @media screen and (max-width: 575px) {
             padding-top: 34px;
@@ -94,6 +126,21 @@
         @media screen and (max-width: 575px) {
             line-height: 0.95rem;
             font-size: 0.8rem;
+        }
+    }
+
+    @import 'footer_modal_app_form';
+
+    .modal {
+        .display-4 {
+            color: #232323;
+        }
+
+        .footer__social-menu {
+            li a {
+                font-size: .85rem;
+                color: #232323;
+            }
         }
     }
 }

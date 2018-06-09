@@ -1,52 +1,49 @@
-<header>
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-12 col-sm-auto header__menu">
-                <nav class="navbar navbar-expand">
-                    <ul class="navbar-nav">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="img/menu.png" alt="">
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#service_link">Що ми робимо</a>
-                                <a class="dropdown-item" href="#portfolio_link">Портфоліо</a>
-                                <a class="dropdown-item" href="#reputation_link">Репутація</a>
-                                <a class="dropdown-item" href="#author_link">Від автора</a>
-                                <a class="dropdown-item" href="#team_link">Про команду</a>
-                                <a class="dropdown-item" href="#contacts_link">Контакти</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+<header id="home_link">
+    <div class="header__carousel owl-carousel owl-theme d-none d-sm-block">
+        <div class="item"><img class="img-fluid" alt="" src="img/bg.jpg"></div>
+        <div class="item"><img class="img-fluid" alt="" src="img/architecture-de-gestion.jpg"></div>
+        <div class="item"><img class="img-fluid" alt="" src="img/bg.jpg"></div>
+        <div class="item"><img class="img-fluid" alt="" src="img/bg.jpg"></div>
+        <div class="item"><img class="img-fluid" alt="" src="img/bg.jpg"></div>
+        <div class="item"><img class="img-fluid" alt="" src="img/bg.jpg"></div>
+        <div class="item"><img class="img-fluid" alt="" src="img/bg.jpg"></div>
+        <div class="item"><img class="img-fluid" alt="" src="img/bg.jpg"></div>
+    </div>
+    <div class="position-absolute">
+        <div class="container-fluid">
+
+            <div class="row justify-content-between">
+                <div class="col-auto header__menu">
+                    <button type="button" data-toggle="modal" data-target="#HeaderMenu">
+                        <img class="d-sm-none" src="img/menu-bl.png" alt="">
+                        <img class="d-none d-sm-inline" src="img/menu.png" alt="">
+                    </button>
+                </div>
+                <div class="col-auto header__contacts">
+                    <p>Viber, Whats up, Telegramm</p>
+                    <p>067 - 325 - 31 - 41</p>
+                </div>
+                <div class="col-12 header__logo"><img class="img-fluid center-block" src="img/logo-3.png"></div>
             </div>
-            <div class="col-auto header__contacts d-none d-sm-block">
-                <p>Viber, Whats up, Telegramm</p>
-                <p>067 - 325 - 31 - 41</p>
-            </div>
-            <div class="col-12 header__logo"><img class="img-fluid center-block" src="img/logo-3.png"></div>
         </div>
     </div>
     <div class="header__caption">
-        <button type="button" data-toggle="modal" data-target="#headerCarouselModal">Portfolio</button>
+        <button type="button" class="open-carousel-btn">Portfolio</button>
     </div>
-    <div class="modal fade" id="headerCarouselModal" tabindex="-1" role="dialog"  aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close" title="close">
-                    <span aria-hidden="true"><img src="img/close-btn.png"></span>
-                </button>
-                <div class="header__carousel owl-carousel owl-theme">
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-2.png"></div>
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-4.png"></div>
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-3.png"></div>
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-1.png"></div>
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-2.png"></div>
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-4.png"></div>
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-3.png"></div>
-                    <div class="item"><img class="img-fluid" alt="" src="img/portfolio-1.png"></div>
-                </div>
-             </div>
+    <div class="open__carousel-wrapp text-right">
+        <button type="button" class="close-carousel-btn">
+            <img src="img/close-btn.png" alt="">
+        </button>
+        <div class="open__carousel owl-carousel owl-theme">
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-2.jpg"></div>
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-4.jpg"></div>
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-3.jpeg"></div>
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-1.jpg"></div>
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-2.jpg"></div>
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-4.jpg"></div>
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-3.jpeg"></div>
+            <div class="item"><img class="img-fluid" alt="" src="img/portfolio-1.jpg"></div>
         </div>
     </div>
+    //= header_menu.html
 </header>

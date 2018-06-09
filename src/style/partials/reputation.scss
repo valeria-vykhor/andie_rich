@@ -1,6 +1,6 @@
 .reputation {
     position: relative;
-    margin-bottom: 57px;
+    margin-bottom: 69px;
 
     @media screen and (max-width: 575px) {
         padding: 43px 0 46px;
@@ -42,7 +42,7 @@
         }
 
         @media screen and (min-width: 992px) {
-            padding: 44px 74px 0;
+            padding: 66px 74px 0;
         }
        
         .item {
@@ -102,14 +102,15 @@
 
             @media screen and (max-width: 575px) {
                 width: 76px;
-                left: 92px;
-                top: 8px;
+                left: 87px;
+                top: 7px;
             }
         }
     }
 
     .display-4 {
-        margin-top: 42px;
+        margin-top: 32px;
+        margin-bottom: 17px;
 
         @media screen and (max-width: 575px) {
             padding-left: 30px;
@@ -117,79 +118,84 @@
         }
     }
     
-    .nav-next {
+    .owl-prev {
 
-        @media screen and (max-width: 575px) {
             position: relative;
             width: 63px;
+            height: 10px;
+            padding: 5px;
+
+            @media screen and (min-width: 768px) {
+                width: 165px;
+            }
+
+            span {
+                display: none;
+            }
 
             &:before {
                 position: absolute;
                 content: '';
                 width: 63px;
                 height: 1px;
-                background-color: #232323;
-                top: 0;
+                background-color: #d9d9d9;
+                top: 5px;
                 left: 0;
+
+                @media screen and (min-width: 768px) {
+                    width: 165px;
+                }
             }
 
             &:after {
                 position: absolute;
                 content: '';
-                top: -3px;
+                top: 3px;
                 left: -10px;
                 border: 2.5px solid transparent;
-                border-right: 5.5px solid #232323;
+                border-right: 5.5px solid #d9d9d9;
             }
-        }
-
-        @media screen and (min-width: 576px) {
-            position: absolute;
-            left: 18px;
-            top: 59%;
-        }
-
-        @media screen and (max-width: 991px) {
-            left: 5px;
-        }
     }
 
-    .nav-prev {
+    .owl-next {
 
-        @media screen and (max-width: 575px) {
             position: relative;
             width: 63px;
-            margin-left: 32px;
+            height: 10px;
+            padding: 5px;
+            margin-left: 30px;
+
+            @media screen and (min-width: 768px) {
+                width: 165px;
+                margin-left: 43px !important;
+            }
+
+            span {
+                display: none;
+            }
 
             &:before {
                 position: absolute;
                 content: '';
                 width: 63px;
                 height: 1px;
-                background-color: #232323;
-                top: 0;
+                background-color: #d9d9d9;
+                top: 5px;
                 left: 0;
+
+                @media screen and (min-width: 768px) {
+                    width: 165px;
+                }
             }
 
             &:after {
                 position: absolute;
                 content: '';
-                top: -3px;
+                top: 3px;
                 right: -10px;
                 border: 2.5px solid transparent;
-                border-left: 5.5px solid #232323;
+                border-left: 5.5px solid #d9d9d9;
             }
-        }
-
-        @media screen and (min-width: 576px) {
-            position: absolute;
-            right: 18px;
-            top: 59%; 
-        }
-
-        @media screen and (max-width: 991px) {
-            right: 5px;
-        }
     }
 
     .owl-carousel .owl-stage-outer {
@@ -202,9 +208,16 @@
         [class*=owl-]:hover {
             background: transparent;
         }
+            margin-top: 38px;
 
+            @media screen and (min-width: 768px) {
+                margin-top: 75px;
+            }
+    }
+
+    .reputation-caption {
         @media screen and (max-width: 575px) {
-            margin-top: 28px;
+            padding-left: 30px;
         }
     }
 }

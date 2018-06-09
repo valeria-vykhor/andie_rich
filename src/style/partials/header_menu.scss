@@ -1,0 +1,161 @@
+.header-menu {
+    background-color: #010001;
+
+    .modal-header {
+        border: none;
+        margin-bottom: 135px;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .modal-dialog {
+        margin: 50px 0 0;
+
+        @media screen and (max-width: 575px) {
+            margin: 20px 20px 0 10px;  
+        }
+    }
+
+    .modal-footer, .modal-header, .modal-body {
+        padding: 0 10px;
+
+        @media screen and (max-width: 575px) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        @media screen and (min-width: 576px) {
+            padding: 0 50px;
+        }
+
+        @media screen and (min-width: 992px) {
+            padding: 0 115px 0 65px;
+        }
+    }
+
+    .modal-footer {
+        margin-top: 167px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+
+        @media screen and (max-width: 575px) {
+            margin-top: 100px;
+        }
+    }
+
+    a {
+        display: block;
+        color: #fff;
+    }
+
+    .close {
+        margin: 0;
+        padding: 10px 16px 16px;
+    }
+
+   .modal-logo {
+        position: relative;
+
+        img {
+            max-width: 45px;
+        }
+
+        &:before {
+            position: absolute;
+            content: 'by';
+            top: 20px;
+            right: 48px;
+            color: #fff;
+            font-size: 0.65rem;
+            @extend .text-uppercase;
+            font-weight: 700;
+        }
+   }
+
+   nav {
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        a {
+           border-bottom: 1px solid #3a383a;
+            font-weight: 700;
+            font-size: 1rem;
+            @extend .text-uppercase;
+            font-family: $caps, $condensed;
+            padding: 10px 30px;
+            position: relative;
+
+            @media screen and (min-width: 992px) {
+                padding: 17px 315px 15px 55px;
+                font-size: 1.6rem;
+            }
+
+           &:first-child {
+                border-top: 1px solid #3a383a;
+           }
+
+           &:before {
+               content: '';
+               position: absolute;
+               width: 7px;
+               height: 7px;
+               border-radius: 50%;
+               top: 18px;
+               left: 0;
+               background-color: #fff;
+
+               @media screen and (min-width: 992px) {
+                    top: 33px;
+               }
+
+               @media screen and (min-width: 576px) {
+                left: -11px;
+               }
+           }
+       }
+   }
+
+   .close {
+    position: relative;
+
+        @media screen and (max-width: 770px) {
+            padding: 0 !important;
+        }
+
+        &:after {
+            position: absolute;
+            content: "close";
+            @extend .text-uppercase;
+            color: #2d2b2d;
+            right: -50px;
+            top: 0px;
+            font-size: 0.83rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+            @media screen and (min-width: 992px)  {
+                right: -40px;
+                top: 14px;
+            }
+        }
+    }
+
+    .list-unstyled {
+        margin-bottom: 0;
+        a {
+            margin-right: 60px;
+            font-size: 0.85rem;
+        }
+    }
+
+    .modal-logo-top {
+        @media screen and (max-width: 991px) {
+            img {
+                height: 40px;
+            }
+        }
+    }
+}

@@ -1,18 +1,14 @@
 .author {
-    background: url(../img/bg-4.png) right bottom no-repeat;
+    background: url(../img/bg-4.jpg) bottom left no-repeat;
     background-size: contain;
-    padding-bottom: 37px;
+    padding-bottom: 34px;
 
     @media screen and (max-width: 575px) {
         background: url(../img/author-last.png) right bottom no-repeat;
         background-size: contain;
         padding-bottom: 40px;
     }
-
-    @media screen and (min-width: 992px) {
-        background-size: auto 436px;
-    }
-
+    
     .p-x {
         
         @media screen and (max-width: 575px) {
@@ -20,13 +16,14 @@
         }
 
         @media screen and (min-width: 992px) {
-            padding: 0 110px 0 90px;
+            margin: 0 0 0 100px;
+            max-width: 812px;
         }
     }
 
     p:nth-child(n+3) {
-        font-size: 0.75rem;
-        line-height: 0.9rem;
+        font-size: 0.95rem;
+        line-height: 1rem;
 
         @media screen and (max-width: 575px) {
             font-style: italic;
@@ -38,7 +35,7 @@
     }
 
     p:nth-child(3) {
-        padding: 33px 0 15px;
+        padding: 48px 0 15px;
 
         @media screen and (max-width: 575px) {
             padding: 23px 0 12px;
@@ -56,7 +53,7 @@
         }
 
         @media screen and (min-width: 992px) {
-            margin-top: 120px;
+            margin-top: 147px;
         }
 
         p {
@@ -81,13 +78,10 @@
     }
 
     .section-title {
-        @media screen and (min-width: 992px) {
-            margin-left: 61px;
-        }
 
         &:after {
             width: 145px;
-            left: 84px;
+            left: 75px;
 
             @media screen and (max-width: 575px) {
                 width: 76px;
@@ -97,8 +91,8 @@
     }
 
     .display-4 {
-        margin-top: 62px;
-        padding-bottom: 24px;
+        margin-top: 42px;
+        padding-bottom: 35px;
         border-bottom: 1px solid #5e5e5e;
         position: relative;
 

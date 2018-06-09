@@ -1,14 +1,16 @@
 footer {
-    background: url(../img/bottom-bg.png) 100% 73px no-repeat;
-    background-size: contain;
+    background: url(../img/bottom-bg.png) 100% 125px no-repeat;
     padding-bottom: 70px;
-    margin-top: 39px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 39px;
+    }
 
     @media screen and (min-width: 768px) {
-        background: url(../img/bg-3.png) top left no-repeat;
-        background-size: contain;
-        margin-top: 93px;
-        padding-top: 125px;
+        background: url(../img/bg-3.png) top no-repeat;
+        background-size: 90% auto;
+        padding-top: 40px;
+        padding-bottom: 320px;
     }
 
     .container {
@@ -19,7 +21,7 @@ footer {
 
     > .container > .row, .container > p {
         @media screen and (min-width: 768px) {
-            max-width: 760px;
+            max-width: 866px;
         }
     }
 
@@ -31,24 +33,27 @@ footer {
     }
 
     .btn-black {
-        width: 256px;
+        max-width: 256px;
+        width: 100%;
         height: 45px;
         font-size: 1.5rem;
         line-height: 1.7rem;
         background-color: #fff;
+        
 
         @media screen and (min-width: 768px) {
             margin-top: 5px;
         }
 
         &:after {
-            background-color: #f8f8f8;
-            height: 6px;
+            background-color: #fff;
+            height: 1px;
         }
     }
 
     .btn-grey {
-        width: 213px;
+        max-width: 213px;
+        width: 100%;
         height: 35px;
         font-size: 1.1rem;
         line-height: 1.2rem;
@@ -56,7 +61,6 @@ footer {
 
         @media screen and (min-width: 768px) {
             margin-top: 5px;
-            margin-left: 19px;
         }
     }
 
@@ -66,15 +70,25 @@ footer {
 
         @media screen and (min-width: 768px) {
             margin-top: 51px;
-        } 
+        }
+        
+        > div {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: 'by';
+                top: 24px;
+                right: 65px;
+                color: #232323;
+                font-size: 0.85rem;
+            }
+        }
         
         img {
             padding-top: 7px;
-            
-            @media screen and (min-width: 768px) {
-                padding-right: 15px;
-                padding-top: 12px;
-            }
+            width: 65px;
+            margin-right: 10px;
         }
 
         &:before {
@@ -84,7 +98,7 @@ footer {
             height: 51px;
             background-color: #232323;
             top: 0;
-            left: 66px;
+            left: 95px;
 
             @media screen and (max-width: 767px) {
                 left: 36px;
@@ -100,7 +114,7 @@ footer {
             border-radius: 50%;
             background-color: #232323;
             top: 60px;
-            left: 63px;
+            left: 92px;
             @media screen and (max-width: 767px) {
                 left: 34px;
                 width: 5px;
@@ -119,7 +133,7 @@ footer {
 
         &:after {
             width: 131px;
-            left: 164px;
+            left: 144px;
             top: 8px;
 
             @media screen and (max-width: 575px) {
@@ -132,9 +146,10 @@ footer {
     }
 
     .display-4 {
-        font-size: 2.5rem;
-        margin-top: 46px;
-        margin-bottom: 38px;
+        font-size: 3rem;
+        margin-top: 40px;
+        margin-bottom: 102px;
+        position: relative;
 
         @media screen and (max-width: 767px) {
             font-size: 1.5rem;
@@ -181,7 +196,7 @@ footer {
             }
 
             @media screen and (min-width: 768px) {
-                margin-left: 60px;
+                margin-right: 60px;
             }
         }
     }
@@ -203,18 +218,6 @@ footer {
             width: 50px;
             padding-top: 3px;
             margin-right: 8px;
-        }
-    }
-
-    .footer__form {
-
-        input, textarea {
-            border-bottom: 1px solid #232323;
-            width: 100%;
-
-            &::placeholder {
-                color: rgba(82, 82, 82, 255);
-            }
         }
     }
 
@@ -250,6 +253,10 @@ footer {
             color: rgba(82, 82, 82, 255);
             font-size: 1.1rem;
         }
+    }
+
+    .p-r-19 {
+        padding-right: 19px !important;
     }
 
     @import 'footer_modal_app_form';

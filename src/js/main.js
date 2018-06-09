@@ -3,8 +3,17 @@
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 
 $(document).ready(function(){
-    $("a.dropdown-item").click(function() {
-        $("html, body").animate({
+    $(".open-carousel-btn").click(function() {
+        $(".open__carousel-wrapp").css("visibility", "visible").css("pointer-events", "all");
+    });
+
+    $(".close-carousel-btn").click(function() {
+        $(".open__carousel-wrapp").css("visibility", "hidden").css("pointer-events", "none");
+    });
+
+    $("a.menu-item").click(function() {
+        $('.header-menu, .modal-backdrop').hide();
+        $("html, body").removeClass('modal-open').animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"
         }, 
         {  
@@ -17,9 +26,24 @@ $(document).ready(function(){
     $(".header__carousel").owlCarousel({
         loop: true,
         dotsEach: true,
-        autoplay:true,
+        //autoplay:true,
         autoplayTimeout: 3000,
         smartSpeed: 700,
+        responsive:{
+            0:{
+                margin: 0,
+                items:1
+            },
+            768:{
+                margin: 0,
+                items:1
+            }
+        }
+    });
+
+    $(".open__carousel").owlCarousel({
+        loop: true,
+        dots: false,
         responsive:{
             0:{
                 margin: 0,
@@ -36,8 +60,22 @@ $(document).ready(function(){
             1024:{
                 margin: 0,
                 items: 4
+            },
+            1200:{
+                margin: 0,
+                items: 5
             }
         }
+    });
+
+    var owl = $('.open__carousel');
+    owl.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY>0) {
+            owl.trigger('next.owl');
+        } else {
+            owl.trigger('prev.owl');
+        }
+        e.preventDefault();
     });
 
     $(".reputation__carousel").owlCarousel({
@@ -45,7 +83,6 @@ $(document).ready(function(){
         dots: false,
         nav: true,
         autoplay:true,
-        navText: [$('.nav-next'),$('.nav-prev')],
         autoplayTimeout: 3000,
         smartSpeed: 700,
         responsive:{
